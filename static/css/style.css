@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.card-header {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px 0 0 !important;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.form-control, .form-select {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.progress {
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+}
+
+.badge {
+    font-size: 0.9em;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin: 2px;
+}
+
+#resultPreview img, #resultPreview video {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.alert {
+    border: none;
+    border-radius: 10px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.processing {
+    animation: pulse 2s infinite;
+}
+
+.drag-over {
+    border: 2px dashed #667eea !important;
+    background-color: rgba(102, 126, 234, 0.1) !important;
+}
